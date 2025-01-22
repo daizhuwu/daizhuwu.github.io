@@ -1,10 +1,30 @@
 body {
 	--base-size: 12px;
-	--gutter: calc(3 * var(--base-size));
+	--gutter-size: calc(3 * var(--base-size));
 
 	--color--primary: black;
 	--color--secondary: gold;
-	--color--background: pink;
+	--color--background: rgb(212, 236, 251);
+}
+header {
+	background-color: var(--color--background);
+	margin-right: var(--gutter-size);
+	padding-block: calc(5 * var(--base-size));
 }
 
+#main-content {
+	block-size: 75vh;
+	padding-top: var(--base-size);
+	padding-bottom: calc(2 * var(--base-size));
+}
+
+footer {
+	background-color: var(--color--secondary);
+	padding-top: var(--base-size);
+	padding-bottom: calc(5 * var(--base-size));
+}
+
+.gutters {
+	padding-inline: var(--gutter-size);
+}
 
