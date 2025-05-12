@@ -1,11 +1,19 @@
-body {
+:root {
 	--base-size: 12px;
-	--gutter-size: calc(3 * var(--base-size));
+	--gutter-size: var(--base-size);
 
 	--color--primary: black;
 	--color--secondary: gold;
 	--color--background: rgb(212, 236, 251);
 }
+
+@media (min-width: 600px) {
+	:root {
+		--base-size: 20px;
+		--gutter-size: calc(3 * var(--base-size));
+	}
+}
+
 header {
 	background-color: var(--color--background);
 	margin-right: var(--gutter-size);
