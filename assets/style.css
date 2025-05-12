@@ -70,8 +70,33 @@ img {
 }
 
 #description {
-	max-width:34rem;
-	font-size:0.875rem;
+	/* max-width:34rem; */
+	font-size:1rem;
 	margin-top:8rem;
 	line-height:1.6;
+}
+
+@media (max-width: 1024px) {
+	img {
+		width: 200px;
+	}
+
+	.bigtext {
+		font-size:clamp(2.5rem,8vw,5rem);
+	}
+}
+
+@media (max-width: 375px) {
+	img {
+		width: 180px;
+	}
+
+	.hover-img{
+		position:fixed;
+		width:70vw;
+		max-width:300px;
+		left:50%;
+		top:50%;
+		transform:translate(-50%,-50%);
+	  }
 }
