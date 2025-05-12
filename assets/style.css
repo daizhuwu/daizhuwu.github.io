@@ -12,6 +12,22 @@ body {
     position:relative;
 }
 
+#top-left,#top-right{
+	position:fixed;
+	top:24px;
+	font-size:0.875rem;
+	font-weight:700;
+	letter-spacing:0.05em;
+}
+
+#top-left{
+	left:24px;
+} 
+
+#top-right{
+	right:24px;
+}
+
 /* default state */
 .bigtext {
 	margin:0;
@@ -51,4 +67,11 @@ img {
 
 .bigtext:hover img {
 	opacity:1;
+}
+
+#description {
+	max-width:34rem;
+	font-size:0.875rem;
+	margin-top:8rem;
+	line-height:1.6;
 }
