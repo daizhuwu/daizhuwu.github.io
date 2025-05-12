@@ -90,13 +90,4 @@ img {
 	img {
 		width: 180px;
 	}
-
-	.hover-img{
-		position:fixed;
-		width:70vw;
-		max-width:300px;
-		left:50%;
-		top:50%;
-		transform:translate(-50%,-50%);
-	  }
 }
